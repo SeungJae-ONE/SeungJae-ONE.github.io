@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Seungjae Won — Ph.D. student in the Department of Intelligent Robotics at Sungkyunkwan University. Research in robot manipulation, robot vision, 6D pose estimation, and shared autonomy." />
+  <link rel="canonical" href="https://seungjae-one.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Seungjae Won | Robotics Researcher" />
+  <meta property="og:description" content="Ph.D. student researching perception-driven robotic manipulation, robot vision, and shared autonomy." />
+  <meta property="og:url" content="https://seungjae-one.github.io/" />
+  <meta property="og:image" content="https://seungjae-one.github.io/assets/og-image-safe.png" />
+  <meta property="og:image:width" content="1731" />
+  <meta property="og:image:height" content="909" />
+  <meta property="og:image:alt" content="Seungjae Won robotics researcher portfolio with abstract perception and motion graphics" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://seungjae-one.github.io/assets/og-image-safe.png" />
+  <meta name="twitter:image:alt" content="Seungjae Won robotics researcher portfolio with abstract perception and motion graphics" />
+  <title>Seungjae Won | Robotics Researcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">SW</a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">ROBOTICS · PERCEPTION · MANIPULATION</p>
+        <h1>Seungjae Won</h1>
+        <p class="role">Ph.D. Student, Department of Intelligent Robotics<br />Sungkyunkwan University</p>
+        <p class="advisor">Advisor: Prof. Hyungpil Moon</p>
+        <p class="lede">
+          My research interests center on perception-driven robotic manipulation —
+          estimating object pose, grasping unseen objects, and building teleoperation
+          and shared-autonomy systems that connect visual understanding to robot action.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Selected Research</a>
+          <a class="button" href="https://scholar.google.com/citations?user=hTncPigAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a class="button" href="https://github.com/SeungJae-ONE" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="button" href="mailto:wonsj@g.skku.edu">Email</a>
+        </div>
+      </div>
+      <div class="hero-visual research-panel">
+        <p class="panel-label">RESEARCH FOCUS</p>
+        <p class="panel-title">Perception<br /><span>to</span> Action.</p>
+        <div class="panel-track" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="panel-copy">Building robot intelligence that connects visual understanding to physical interaction.</p>
+      </div>
+    </section>
+
+    <section class="focus-strip" aria-label="Research interests">
+      <span>Robot Manipulation</span>
+      <span>Robot Vision</span>
+      <span>6D Pose Estimation</span>
+      <span>Grasping</span>
+      <span>Teleoperation</span>
+      <span>Shared Autonomy</span>
+    </section>
+
+    <section id="research" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED RESEARCH</p>
+        <h2>From perception to physical interaction.</h2>
+        <p>Selected work from my previous research in robot perception, manipulation, and teleoperation.</p>
+      </div>
+
+      <article class="project feature-project">
+        <div class="project-media">
+          <img src="assets/pose-tracking.webp" alt="6D pose tracking results for multiple objects" loading="lazy" />
+        </div>
+        <div class="project-copy">
+          <p class="project-index">01 · ROBOT VISION</p>
+          <h3>Zero-Shot 6D Pose Tracking for Sequential Robot Manipulation</h3>
+          <p>
+            A perception pipeline for unseen objects combining open-vocabulary detection,
+            Segment Anything Model segmentation, online video segmentation, and BundleSDF
+            for continuous 6D pose tracking from RGB-D observations.
+          </p>
+          <div class="tags"><span>SAM</span><span>BundleSDF</span><span>RGB-D</span><span>6D Pose Tracking</span></div>
+          <p class="project-note">Presented at ICCAS 2024 · Poster Session</p>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project card">
+          <img src="assets/grasping.webp" alt="Grasp estimation pipeline using segmentation and Contact-GraspNet" loading="lazy" />
+          <div class="card-body">
+            <p class="project-index">02 · GRASPING</p>
+            <h3>Unknown-Object Grasping with SAM & Contact-GraspNet</h3>
+            <p>
+              Text-guided object detection and segmentation were combined with RGB-D grasp-pose
+              estimation, followed by coordinate transformation and real-robot grasp execution.
+            </p>
+            <div class="tags"><span>Grounding DINO</span><span>SAM</span><span>Contact-GraspNet</span></div>
+          </div>
+        </article>
+
+        <article class="project card">
+          <img src="assets/orientation.webp" alt="Object orientation estimation pipeline using YOLO-OBB and TRIAD" loading="lazy" />
+          <div class="card-body">
+            <p class="project-index">03 · 3D PERCEPTION</p>
+            <h3>Object Orientation Estimation with YOLO-OBB & TRIAD</h3>
+            <p>
+              Estimated connector orientation using oriented bounding-box detection, point-cloud
+              surface normals, a camera reference vector, and the TRIAD attitude-determination method.
+            </p>
+            <div class="tags"><span>YOLO-OBB</span><span>Point Cloud</span><span>TRIAD</span></div>
+            <p class="project-note">Presented at ICRA 2024 · LBR Poster Session</p>
+          </div>
+        </article>
+      </div>
+
+      <article class="project feature-project reverse">
+        <div class="project-copy">
+          <p class="project-index">04 · MANIPULATION</p>
+          <h3>6D Pose-Based Recovery from Rotational Slip</h3>
+          <p id="slip-recovery-description">
+            A proof-of-concept experiment from my M.S. thesis used BundleSDF to track the
+            6D pose of a grasped object after an intentional rotational slip. The estimated
+            rotation was used to realign the robot before peg-in-hole insertion; final
+            translational positioning was completed through teleoperation.
+          </p>
+          <div class="tags"><span>BundleSDF</span><span>6D Pose Tracking</span><span>Slip Recovery</span><span>Peg-in-Hole</span></div>
+          <p class="project-note">M.S. Thesis Experiment</p>
+        </div>
+        <div class="project-media video-wrap">
+          <video controls muted playsinline preload="metadata" poster="assets/teleop.webp" aria-label="Rotational slip recovery and peg-in-hole proof-of-concept experiment" aria-describedby="slip-recovery-description">
+            <source src="assets/peg-in-hole.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+        </div>
+      </article>
+
+      <article class="project text-project">
+        <div class="project-copy">
+          <p class="project-index">05 · TELEOPERATION</p>
+          <h3>Haptic Teleoperation & Autonomous Control</h3>
+          <p>
+            A ROS 2-based system using a Force Dimension Omega 7 and Franka Research 3 to
+            evaluate haptic teleoperation and autonomous control. The operator switched
+            between the two control modes using a foot pedal.
+          </p>
+          <div class="tags"><span>ROS 2</span><span>Haptic Teleoperation</span><span>Autonomous Control</span><span>Force Feedback</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="publications" class="section-shell section-block compact-section">
+      <div class="section-heading">
+        <p class="eyebrow">PUBLICATIONS & PRESENTATIONS</p>
+        <h2>Selected conference work.</h2>
+      </div>
+      <div class="publication-list">
+        <article>
+          <span class="pub-year">2024</span>
+          <div>
+            <h3><a class="publication-link" href="https://scholar.google.com/scholar?q=%22Object+Orientation+Estimation+Using+TRIAD+and+Oriented+Bounding+Box+Based+Object+Detection%22" target="_blank" rel="noopener noreferrer">Object Orientation Estimation Using TRIAD and Oriented Bounding Box Based Object Detection</a></h3>
+            <p>Seungjae Won, Hunjo Lee, JiWoong Han, Dongbum Pyo, Gi-Hun Yang</p>
+            <p class="muted">IEEE International Conference on Robotics and Automation (ICRA 2024), Yokohama, Japan · LBR Poster</p>
+          </div>
+        </article>
+        <article>
+          <span class="pub-year">2024</span>
+          <div>
+            <h3><a class="publication-link" href="https://scholar.google.com/scholar?q=%22Zero-Shot+6D+Pose+Tracking+For+Sequential+Robot+Manipulation+Using+SAM+and+Online+Segmentation+Models%22" target="_blank" rel="noopener noreferrer">Zero-Shot 6D Pose Tracking For Sequential Robot Manipulation Using SAM and Online Segmentation Models</a></h3>
+            <p>Seungjae Won, Hunjo Lee, Gi-Hun Yang</p>
+            <p class="muted">IEEE International Conference on Control, Automation and Systems (ICCAS 2024), Jeju, Korea · Poster</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="section-shell section-block compact-section">
+      <div class="section-heading">
+        <p class="eyebrow">BACKGROUND</p>
+        <h2>Education & technical stack.</h2>
+      </div>
+      <div class="background-grid">
+        <div class="timeline">
+          <article>
+            <span class="timeline-mark"></span>
+            <p class="muted">Sep. 2025 – Present</p>
+            <h3>Ph.D. Student · Department of Intelligent Robotics</h3>
+            <p>Sungkyunkwan University</p>
+            <p class="muted">Advisor: Prof. Hyungpil Moon</p>
+          </article>
+          <article>
+            <span class="timeline-mark"></span>
+            <p class="muted">2023–2025</p>
+            <h3>M.S. in Robotics</h3>
+            <p>Korea University of Science and Technology (UST) · KITECH School</p>
+            <p class="muted">Advisor: Prof. Gi-Hun Yang</p>
+            <p class="muted">Thesis: Robot Manipulation Tasks Using Segment Anything Model-Based Grasping and Pose Tracking of Unseen Objects</p>
+          </article>
+          <article>
+            <span class="timeline-mark"></span>
+            <p class="muted">2015–2022</p>
+            <h3>B.S. in Mechanical System Engineering</h3>
+            <p>Hansung University</p>
+          </article>
+        </div>
+
+        <div class="toolbox">
+          <div>
+            <h3>Languages</h3>
+            <p>C++ · Python · C#</p>
+          </div>
+          <div>
+            <h3>Robotics / Tools</h3>
+            <p>ROS 2 · Isaac Sim · OpenCV · PyTorch · Unity · Eigen · PyQt</p>
+          </div>
+          <div>
+            <h3>Robots / Interfaces</h3>
+            <p>Franka Research 3 · UFACTORY xArm6 · Force Dimension Omega 7 · Phantom Omni / Premium</p>
+          </div>
+          <div>
+            <h3>Vision / Models</h3>
+            <p>RealSense · ZED · YOLO · SAM · Grounding DINO · BundleSDF · Contact-GraspNet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-block">
+        <h3>Research Experience</h3>
+        <div class="experience-list">
+          <article>
+            <p class="muted">Mar. 2025 – Aug. 2025</p>
+            <h3>Research Intern</h3>
+            <p>Department of Human-Centered Robotics, Korea Institute of Industrial Technology (KITECH)</p>
+          </article>
+          <article>
+            <p class="muted">Jan. 2023 – Feb. 2025</p>
+            <h3>Research Student</h3>
+            <p>Department of Human-Centered Robotics, Korea Institute of Industrial Technology (KITECH)</p>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-shell contact-inner">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let’s talk robotics.</h2>
+        <p>For research discussions or collaboration, feel free to reach out by email.</p>
+        <a class="button primary" href="mailto:wonsj@g.skku.edu">wonsj@g.skku.edu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Seungjae Won</p>
+    <p>Built as a lightweight static site for GitHub Pages.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

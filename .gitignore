@@ -1,0 +1,9 @@
+# Private source materials and review files
+tmp/
+*.pptx
+원승재_cv.pdf
+250624_초실감_아바타_자율제어.mp4
+
+# Collaboration imagery not cleared for public use
+assets/shared-autonomy.webp
+assets/og-image.png
