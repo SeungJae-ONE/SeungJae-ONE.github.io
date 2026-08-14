@@ -90,12 +90,13 @@ h3 { line-height: 1.28; letter-spacing: -.025em; }
 }
 .research-panel::after { content: ""; position: absolute; width: 190px; height: 190px; border: 1px solid rgba(220,233,229,.28); border-radius: 50%; right: -42px; top: 48px; }
 .panel-label { margin: 0 0 auto; color: #b6d5cc; font-size: .75rem; font-weight: 800; letter-spacing: .16em; }
-.panel-title { margin: 0; font-size: clamp(2.1rem, 4vw, 3.6rem); line-height: 1; font-weight: 800; letter-spacing: -.045em; }
+.panel-title { margin: 0; font-size: clamp(2.7rem, 4.8vw, 4.4rem); line-height: .9; font-weight: 800; letter-spacing: -.055em; }
+.panel-title span { color: #d78a34; font-size: .55em; letter-spacing: -.03em; }
 .panel-track { display: grid; grid-template-columns: auto 1fr auto 1fr auto; align-items: center; gap: 8px; margin: 30px 0 22px; }
 .panel-track::before, .panel-track::after { content: ""; height: 1px; background: rgba(220,233,229,.45); }
 .panel-track span { width: 9px; height: 9px; border-radius: 50%; background: #dce9e5; }
 .panel-track span:nth-child(2) { background: #d78a34; }
-.panel-affiliation { margin: 0; color: #e4ece8; font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.45; font-weight: 650; }
+.panel-copy { max-width: 440px; margin: 0; color: #c7d5d0; font-size: .95rem; }
 .focus-strip {
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
   display: flex; flex-wrap: wrap; gap: 0;
