@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Seungjae Won — Ph.D. student in the Department of Intelligent Robotics at Sungkyunkwan University. Research in robot manipulation, robot vision, 6D pose estimation, and shared autonomy." />
+  <meta name="description" content="Seungjae Won — Ph.D. student in the Department of Intelligent Robotics at Sungkyunkwan University. Research in robot manipulation and robot perception." />
   <link rel="canonical" href="https://seungjae-one.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
@@ -34,14 +34,14 @@
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">ROBOTICS · PERCEPTION · MANIPULATION</p>
+        <p class="eyebrow">ROBOT MANIPULATION · ROBOT PERCEPTION</p>
         <h1>Seungjae Won</h1>
         <p class="role">Ph.D. Student, Department of Intelligent Robotics<br />Sungkyunkwan University</p>
         <p class="advisor">Advisor: Prof. Hyungpil Moon</p>
         <p class="lede">
-          My research interests center on perception-driven robotic manipulation —
-          estimating object pose, grasping unseen objects, and building teleoperation
-          and shared-autonomy systems that connect visual understanding to robot action.
+          My research focuses on perception-driven robotic manipulation — estimating
+          object pose, grasping unseen objects, and connecting visual understanding to
+          physical interaction.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#research">Selected Research</a>
@@ -51,20 +51,16 @@
         </div>
       </div>
       <div class="hero-visual research-panel">
-        <p class="panel-label">RESEARCH FOCUS</p>
-        <p class="panel-title">Perception<br /><span>to</span> Action.</p>
+        <p class="panel-label">CURRENT AFFILIATION</p>
+        <p class="panel-title">Ph.D. Student</p>
         <div class="panel-track" aria-hidden="true"><span></span><span></span><span></span></div>
-        <p class="panel-copy">Building robot intelligence that connects visual understanding to physical interaction.</p>
+        <p class="panel-affiliation">Intelligent Robotics<br />Sungkyunkwan University</p>
       </div>
     </section>
 
     <section class="focus-strip" aria-label="Research interests">
       <span>Robot Manipulation</span>
-      <span>Robot Vision</span>
-      <span>6D Pose Estimation</span>
-      <span>Grasping</span>
-      <span>Teleoperation</span>
-      <span>Shared Autonomy</span>
+      <span>Robot Perception</span>
     </section>
 
     <section id="research" class="section-shell section-block">
@@ -120,7 +116,7 @@
         </article>
       </div>
 
-      <article class="project feature-project reverse">
+      <article class="project text-project">
         <div class="project-copy">
           <p class="project-index">04 · MANIPULATION</p>
           <h3>6D Pose-Based Recovery from Rotational Slip</h3>
@@ -133,24 +129,25 @@
           <div class="tags"><span>BundleSDF</span><span>6D Pose Tracking</span><span>Slip Recovery</span><span>Peg-in-Hole</span></div>
           <p class="project-note">M.S. Thesis Experiment</p>
         </div>
-        <div class="project-media video-wrap">
-          <video controls muted playsinline preload="metadata" poster="assets/teleop.webp" aria-label="Rotational slip recovery and peg-in-hole proof-of-concept experiment" aria-describedby="slip-recovery-description">
-            <source src="assets/peg-in-hole.mp4" type="video/mp4" />
-            Your browser does not support embedded video.
-          </video>
-        </div>
       </article>
 
-      <article class="project text-project">
+      <article class="project feature-project reverse">
         <div class="project-copy">
           <p class="project-index">05 · TELEOPERATION</p>
           <h3>Haptic Teleoperation & Autonomous Control</h3>
-          <p>
+          <p id="teleoperation-description">
             A ROS 2-based system using a Force Dimension Omega 7 and Franka Research 3 to
             evaluate haptic teleoperation and autonomous control. The operator switched
-            between the two control modes using a foot pedal.
+            between the two control modes using a foot pedal. In an avatar-system setup,
+            HMD orientation was also used to control a remote camera viewpoint.
           </p>
-          <div class="tags"><span>ROS 2</span><span>Haptic Teleoperation</span><span>Autonomous Control</span><span>Force Feedback</span></div>
+          <div class="tags"><span>ROS 2</span><span>Haptic Teleoperation</span><span>Autonomous Control</span><span>HMD Camera Control</span></div>
+        </div>
+        <div class="project-media video-wrap">
+          <video controls muted playsinline preload="metadata" poster="assets/teleop.webp" aria-label="HMD-guided remote camera control for an avatar system" aria-describedby="teleoperation-description">
+            <source src="assets/hmd-camera-control.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
         </div>
       </article>
     </section>
