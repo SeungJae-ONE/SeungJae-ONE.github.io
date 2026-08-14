@@ -71,8 +71,15 @@
       </div>
 
       <article class="project feature-project">
-        <div class="project-media">
-          <img src="assets/pose-tracking.webp" alt="6D pose tracking results for multiple objects" loading="lazy" />
+        <div class="project-media project-gallery feature-gallery">
+          <figure class="media-figure">
+            <img src="assets/pose-tracking-method.png" alt="Pipeline from open-vocabulary detection and SAM segmentation to online 6D pose tracking" loading="lazy" />
+            <figcaption><span>METHOD</span> Detection, segmentation, and continuous 6D pose estimation</figcaption>
+          </figure>
+          <figure class="media-figure">
+            <img src="assets/pose-tracking.webp" alt="6D pose tracking results for multiple objects" loading="lazy" />
+            <figcaption><span>RESULT</span> Tracking across varied object poses</figcaption>
+          </figure>
         </div>
         <div class="project-copy">
           <p class="project-index">01 · ROBOT VISION</p>
@@ -89,7 +96,20 @@
 
       <div class="project-grid">
         <article class="project card">
-          <img src="assets/grasping.webp" alt="Grasp estimation pipeline using segmentation and Contact-GraspNet" loading="lazy" />
+          <div class="card-media-grid">
+            <figure class="media-figure media-figure-wide">
+              <img src="assets/grasping-method.png" alt="Pipeline from text-guided detection and SAM segmentation to 6D grasp-pose estimation" loading="lazy" />
+              <figcaption><span>METHOD</span> Grounded segmentation and grasp-pose estimation</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img src="assets/grasp-pose-result.png" alt="Candidate 6D grasp poses estimated from an RGB-D observation" loading="lazy" />
+              <figcaption><span>RESULT</span> Candidate grasp poses</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img src="assets/robot-grasp.png" alt="Franka Research 3 executing a grasp on an electrical connector" loading="lazy" />
+              <figcaption><span>EXECUTION</span> Real-robot grasp</figcaption>
+            </figure>
+          </div>
           <div class="card-body">
             <p class="project-index">02 · GRASPING</p>
             <h3>Unknown-Object Grasping with SAM & Contact-GraspNet</h3>
@@ -116,17 +136,35 @@
         </article>
       </div>
 
-      <article class="project text-project">
+      <article class="project recovery-project">
+        <div class="recovery-media" aria-label="Rotational slip recovery and teleoperated insertion sequence">
+          <figure class="recovery-step recovery-step-wide">
+            <img src="assets/slip-event.png" alt="A grasped cylindrical object before and after an intentional rotational slip" loading="lazy" />
+            <figcaption><span>01</span> Intentional rotational slip</figcaption>
+          </figure>
+          <figure class="recovery-step">
+            <img src="assets/pose-recovery.png" alt="Robot reoriented using the updated object pose" loading="lazy" />
+            <figcaption><span>02</span> Orientation recovery from the updated 6D pose</figcaption>
+          </figure>
+          <figure class="recovery-step recovery-video-step">
+            <video controls muted playsinline preload="metadata" poster="assets/teleop-insertion.png" aria-label="Force Dimension teleoperation for peg-in-hole insertion" aria-describedby="slip-recovery-description">
+              <source src="assets/teleop-peg-in-hole.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+            <figcaption><span>03</span> Teleoperated peg-in-hole insertion</figcaption>
+          </figure>
+        </div>
         <div class="project-copy">
-          <p class="project-index">04 · MANIPULATION</p>
-          <h3>6D Pose-Based Recovery from Rotational Slip</h3>
+          <p class="project-index">04 · MANIPULATION & TELEOPERATION</p>
+          <h3>6D Pose Recovery & Teleoperated Peg-in-Hole</h3>
           <p id="slip-recovery-description">
-            A proof-of-concept experiment from my M.S. thesis used BundleSDF to track the
-            6D pose of a grasped object after an intentional rotational slip. The estimated
-            rotation was used to realign the robot before peg-in-hole insertion; final
-            translational positioning was completed through teleoperation.
+            In an M.S. thesis experiment, BundleSDF tracked the changed 6D pose of a
+            grasped object after an intentional rotational slip. The estimated rotation
+            was used to recover the pre-slip orientation, followed by translational
+            alignment and peg-in-hole insertion through a Force Dimension Omega 7
+            teleoperation interface.
           </p>
-          <div class="tags"><span>BundleSDF</span><span>6D Pose Tracking</span><span>Slip Recovery</span><span>Peg-in-Hole</span></div>
+          <div class="tags"><span>BundleSDF</span><span>6D Pose Tracking</span><span>Force Dimension Omega 7</span><span>Peg-in-Hole</span></div>
           <p class="project-note">M.S. Thesis Experiment</p>
         </div>
       </article>
@@ -134,20 +172,17 @@
       <article class="project feature-project reverse">
         <div class="project-copy">
           <p class="project-index">05 · TELEOPERATION</p>
-          <h3>Haptic Teleoperation & Autonomous Control</h3>
-          <p id="teleoperation-description">
-            A ROS 2-based system using a Force Dimension Omega 7 and Franka Research 3 to
-            evaluate haptic teleoperation and autonomous control. The operator switched
-            between the two control modes using a foot pedal. In an avatar-system setup,
-            HMD orientation was also used to control a remote camera viewpoint.
+          <h3>Exoskeleton-Based Teleoperation System</h3>
+          <p>
+            Reproduced an exoskeleton-based master–follower teleoperation system using
+            ROS 2 and Franka Research 3 robots. HMD feedback provided the operator with a
+            remote workspace view, and task-level assistance was explored as an extension
+            toward shared control.
           </p>
-          <div class="tags"><span>ROS 2</span><span>Haptic Teleoperation</span><span>Autonomous Control</span><span>HMD Camera Control</span></div>
+          <div class="tags"><span>Exoskeleton</span><span>Master–Follower</span><span>ROS 2</span><span>Franka Research 3</span><span>HMD Feedback</span></div>
         </div>
-        <div class="project-media video-wrap">
-          <video controls muted playsinline preload="metadata" poster="assets/teleop.webp" aria-label="HMD-guided remote camera control for an avatar system" aria-describedby="teleoperation-description">
-            <source src="assets/teleop-peg-in-hole.mp4" type="video/mp4" />
-            Your browser does not support embedded video.
-          </video>
+        <div class="project-media">
+          <img src="assets/exoskeleton-teleoperation.png" alt="Exoskeleton master interface controlling a Franka Research 3 follower with HMD feedback" loading="lazy" />
         </div>
       </article>
     </section>
