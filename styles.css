@@ -60,6 +60,7 @@ nav a:hover { color: var(--accent); }
   color: var(--accent);
 }
 h1 { font-size: clamp(3rem, 6vw, 5.5rem); line-height: .94; font-weight: 600; letter-spacing: -.05em; margin: 0 0 30px; white-space: nowrap; }
+.name-j { display: inline-block; margin-left: .04em; }
 h2 { font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1.04; letter-spacing: -.045em; margin: 0; }
 h3 { line-height: 1.28; letter-spacing: -.025em; }
 .role { font-size: clamp(1.35rem, 2vw, 1.9rem); line-height: 1.35; font-weight: 650; margin: 0 0 5px; }
